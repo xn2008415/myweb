@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人作品集 | 成果展示</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- 導覽列 -->
+    <nav class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#about">關於我</a></li>
+            <li><a href="#projects">成果展示</a></li>
+            <li><a href="#contact">聯絡方式</a></li>
+        </ul>
+    </nav>
+
+    <!-- 個人簡介區塊 (Hero Section) -->
+    <header id="about" class="hero">
+        <div class="hero-content">
+            <h1>你好，我是 [你的名字]</h1>
+            <p>畢業於 [你的大學與系所] | 專注於 [你的專業領域，例如：網頁前端 / 數據分析 / 視覺設計]</p>
+            <a href="#projects" class="btn">查看我的作品</a>
+        </div>
+    </header>
+
+    <!-- 作品展示區塊 -->
+    <section id="projects" class="projects-section">
+        <h2>大學四年成果展示</h2>
+        
+        <!-- 分類篩選按鈕 -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="capstone">畢業專題</button>
+            <button class="filter-btn" data-filter="assignment">課程作業</button>
+            <button class="filter-btn" data-filter="competition">競賽成果</button>
+        </div>
+
+        <!-- 作品卡片列表 -->
+        <div class="projects-grid">
+            
+            <!-- 卡片 1：畢業專題 -->
+            <div class="project-card" data-category="capstone">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x250" alt="專題圖片">
+                </div>
+                <div class="card-content">
+                    <span class="tag">畢業專題</span>
+                    <h3>畢業專題：智慧系統設計</h3>
+                    <p>利用 Python 與 React 開發的智慧檢測系統，解決傳統人工流程效率低下的問題。</p>
+                    <div class="card-tags">
+                        <span>Python</span>
+                        <span>React</span>
+                        <span>API</span>
+                    </div>
+                    <a href="#" class="card-link" target="_blank">查看詳情 / Demo</a>
+                </div>
+            </div>
+
+            <!-- 卡片 2：課程作業 -->
+            <div class="project-card" data-category="assignment">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x250" alt="作業圖片">
+                </div>
+                <div class="card-content">
+                    <span class="tag">大三作業</span>
+                    <h3>演算法實作與分析</h3>
+                    <p>實作各種資料結構與演算法，並進行效能分析與最佳化。</p>
+                    <div class="card-tags">
+                        <span>C++</span>
+                        <span>Data Structure</span>
+                    </div>
+                    <a href="#" class="card-link" target="_blank">GitHub 原始碼</a>
+                </div>
+            </div>
+
+            <!-- 卡片 3：競賽成果 -->
+            <div class="project-card" data-category="competition">
+                <div class="card-image">
+                    <img src="https://via.placeholder.com/400x250" alt="競賽圖片">
+                </div>
+                <div class="card-content">
+                    <span class="tag">競賽</span>
+                    <h3>全校黑客松佳作</h3>
+                    <p>在 24 小時內發想並完成 prototype，解決校園二手交易資訊不對稱的問題。</p>
+                    <div class="card-tags">
+                        <span>UI/UX</span>
+                        <span>Figma</span>
+                        <span>HTML/CSS</span>
+                    </div>
+                    <a href="#" class="card-link" target="_blank">專案簡報</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 聯絡與頁尾 -->
+    <footer id="contact">
+        <h2>聯絡資訊</h2>
+        <p>如果你對我的作品有興趣，歡迎透過以下方式聯絡我！</p>
+        <div class="social-links">
+            <a href="mailto:your.email@example.com">Email</a>
+            <a href="https://github.com/your-username" target="_blank">GitHub</a>
+            <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        </div>
+        <p class="copyright">&copy; 2026 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
